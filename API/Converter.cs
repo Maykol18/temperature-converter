@@ -26,7 +26,7 @@ public static class Converter
 
 public enum ETemperatureUnit
 {
+    Celsius,
     Fahrenheit,
-    Kelvin,
-    Celsius
+    Kelvin
 }
