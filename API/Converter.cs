@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
 namespace API;
 
 public static class Converter
@@ -24,6 +27,7 @@ public static class Converter
     };
 }
 
+[JsonConverter(typeof(JsonStringEnumConverter))]
 public enum ETemperatureUnit
 {
     Celsius,
